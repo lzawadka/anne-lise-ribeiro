@@ -1,0 +1,113 @@
+body {
+  overflow: hidden;
+  background-image: url("./assets/background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-family: "Copperplate";
+}
+
+.contentInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.contentInfo h1 {
+  font-size: 60px;
+  font-weight: lighter;
+  text-align: center;
+  line-height: 70%;
+}
+
+.contentInfo h2 {
+  font-size: 26px;
+  font-weight: lighter;
+}
+
+.nameIntro p {
+  font-size: 40px;
+  font-weight: lighter;
+  padding-top: 35px;
+  text-transform: uppercase;
+  pointer-events: none;
+}
+
+.nameIntro p:after {
+  content: "";
+  display: block;
+  margin: auto;
+  height: 2px;
+  animation: underline 2.5s infinite;
+}
+
+@keyframes underline {
+  0% {
+    width: 0%;
+    background-color: black;
+  }
+  100% {
+    width: 100%;
+    background-color: transparent;
+  }
+}
+
+.nameIntro {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.infoIntro {
+  position: absolute;
+  bottom: 2vh;
+  left: 2vw;
+  font-size: 20px;
+  font-weight: lighter;
+  pointer-events: none;
+}
+
+.logoIntro {
+  position: absolute;
+  bottom: 2.5vh;
+  right: 4vw;
+  height: 40px;
+  width: 40px;
+  transition: 0.3s ease-in-out;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("./assets/linkedin.png");
+}
+
+.logoIntro:hover {
+  transition: 0.3s ease-in-out;
+  background-image: url("./assets/linkedin-black.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media screen and (max-width: 720px) {
+  .nameIntro {
+    transform: translateY(-10vh);
+  }
+
+  .contentInfo h2 {
+    padding-top: 10px;
+  }
+
+  .infoIntro {
+    bottom: 8vh;
+  }
+
+  .logoIntro {
+    left: 3vw;
+    background-image: url("./assets/linkedin-black.png");
+  }
+}
