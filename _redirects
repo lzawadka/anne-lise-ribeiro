@@ -2,4 +2,4 @@
 # Ces règles changeront si vous modifiez les domaines personnalisés ou les paramètres HTTPS de votre site.
 
 # Redirige le sous-domaine Netlify par défaut vers le domaine principal
-http://eager-blackwell-9d69e4.netlify.com/* http://www.anne-lise-ribeiro.fr/:splat 301!
+# http://eager-blackwell-9d69e4.netlify.com/* http://www.anne-lise-ribeiro.fr/:splat 301!
