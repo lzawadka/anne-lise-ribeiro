@@ -7,7 +7,7 @@
   </div>
   <div class="second-part" v-scroll-reveal.reset="{ delay : 0, viewFactor: 0.2 }">
       <div class="imprimeRectangle">
-        <div class="rectangle1"><p>Lorem Ipsum</p></div>
+        <div class="rectangle1"></div>
         <img v-parallax="0.15" class="imprime2" src="../../assets/pictures/Imprimes/Imprime2.png" alt="imprime2">
       </div>
       <div>
