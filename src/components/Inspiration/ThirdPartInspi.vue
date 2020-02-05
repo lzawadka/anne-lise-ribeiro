@@ -4,7 +4,7 @@
       <div class="firstDiv">
         <img v-parallax="-0.3" class="Inspiration2" src="./../../assets/pictures/Inspiration/Inspiration2.png" alt="">
         <div class="firstRectangle"></div>
-        <p v-parallax="0.15">L’artiste et photographe JR, à influencé ma collection. Il prend en photo des personnes agées, les peints sur des immeubles abimés par le temps et reprend le tout en photo. Il créé une parrallele entre l’homme et la sociétée </p>
+        <p v-parallax="0.15">L’artiste et photographe JR, a influencé ma collection. Il prend en photo des personnes âgées, les peint sur des immeubles abimés par le temps et reprend le tout en photo. Il crée un parrallèle entre l’homme et la société.</p>
         <img v-parallax="-0.3" class="Inspiration3" src="./../../assets/pictures/Inspiration/Inspiration3.png" alt="">
       </div>
       
@@ -12,7 +12,7 @@
   <div class="second-part" v-scroll-reveal.reset="{ delay : 0, viewFactor: 0.2 }">
     <img  v-parallax="0.05" class="Inspiration4" src="./../../assets/pictures/Inspiration/Inspiration4.png" alt="">
     <div class="secondRectangle"></div>
-    <p v-parallax="0.15">Pour retranscire le corps qui vieillie et qui se deforme, j’ai pris en photo des mannequins devant des mirroirs deformant pour les retranscires en mini moulage</p>
+    <p v-parallax="0.15">Pour retranscrire le corps qui vieillit et qui se déforme, j’ai pris en photo des mannequins devant des miroirs déformant pour les retranscrire en mini-moulages.</p>
     <img v-parallax="-0.2" class="Inspiration5" src="./../../assets/pictures/Inspiration/Inspiration5.png" alt="">
   </div>
 </div>  

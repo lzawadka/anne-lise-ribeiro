@@ -14,27 +14,33 @@ export default {
 </script>
 
 <style type="text/scss" lang="scss" scoped>
-    footer {
-        display: block;
-        height: 8vh;
-        width: 100vw;
-        border-top: solid 2px #E2C491;
-        background-color: white;
-        cursor: default;
+footer {
+  display: block;
+  height: 8vh;
+  width: 100vw;
+  border-top: solid 2px #E2C491;
+  background-color: white;
+  cursor: default;
 
-        .footer {
-            height: 8vh;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            width: 100vw;
-            font-size: 18px;
-        }
+  .footer {
+    height: 8vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    font-size: 18px;
+  }
 
-        .copyright {
-            font-size: 18px;
-            width: 20vw;
-            text-align: center;
-        }
-    }
+  .copyright {
+    font-size: 18px;
+    width: 20vw;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  footer {
+    display: none;
+  }
+}
 </style>

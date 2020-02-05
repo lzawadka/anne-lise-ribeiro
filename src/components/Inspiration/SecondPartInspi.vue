@@ -3,7 +3,7 @@
         <div v-scroll-reveal.reset="{ delay : 0, viewFactor: 0.1 }"  class="rectangle-container">
           <img class="Inspiration1" src="./../../assets/pictures/Inspiration/Inspiration1.png" alt="">
           <p v-parallax="0.25" class="firstWord">Ternissement</p>
-          <p v-parallax="-0.05" class="secondWord">Fletrissement</p>
+          <p v-parallax="-0.05" class="secondWord">Flétrissement</p>
           <p v-parallax="-0.25" class="thirdWord">Déformation</p>
           <p v-parallax="0.15" class="forthWord">Épuisement</p>
         </div>

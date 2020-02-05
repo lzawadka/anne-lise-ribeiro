@@ -168,4 +168,10 @@ header {
       }
   }
 }
+
+@media (max-width: 768px) {
+  header {
+    display: none;
+  }
+}
 </style>

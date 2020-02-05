@@ -4,7 +4,7 @@
       <div class="firstDiv">
         <img v-parallax="-0.3" class="toile8" src="./../../assets/pictures/Toile/Toile8.png" alt="">
         <div class="firstRectangle"></div>
-        <p v-parallax="0.25">Une doudoune revisité, avec un coté oversize qui efface le corps et le fait disparaitre.</p>
+        <p v-parallax="0.25">Une doudoune revisitée, avec un coté oversize qui efface le corps et le fait disparaitre.</p>
       </div>
       
   </div>

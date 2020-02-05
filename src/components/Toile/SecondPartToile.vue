@@ -4,7 +4,7 @@
       <div class="firstDiv">
         <img v-parallax="-0.3" class="toile5" src="./../../assets/pictures/Toile/Toile5.png" alt="">
         <div class="firstRectangle"></div>
-        <p v-parallax="0.25">La robe chemise, une mini robe qui s’ecroule et s’affaisse comme une peau qui tomberait avec le temps et creer une comparaison avec le coté lisse.  </p>
+        <p v-parallax="0.25">La robe chemise, une mini-robe qui s’écroule et s’affaisse comme une peau qui tomberait avec le temps et qui crée une comparaison avec le côté lisse.</p>
       </div>
       
   </div>

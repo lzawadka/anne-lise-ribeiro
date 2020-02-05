@@ -6,8 +6,8 @@
         <img v-parallax="-0.3" class="toile1" src="./../../assets/pictures/Toile/Toile1.png" alt="">
         <div class="firstRectangle"></div>
         <img v-parallax="0.25" class="toile2" src="./../../assets/pictures/Toile/Toile2.png" alt="">
-        <p>Le jogging, une piece confortable qui se recroqueville et se plisse avec le temps qui passe.
-          une forme qui plisse et nous donne envie de nous relacher.  </p>
+        <p>Le jogging, une pièce confortable qui se recroqueville et se plisse avec le temps qui passe.
+              Une forme qui plisse et nous donne envie de nous relâcher.</p>
       </div>
       
   </div>

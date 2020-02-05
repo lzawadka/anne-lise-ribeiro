@@ -10,7 +10,7 @@
       <div class="firstDiv">
         <img v-parallax="-0.3" class="toile13" src="./../../assets/pictures/Toile/Toile13.png" alt="">
         <div class="firstRectangle"></div>
-        <p v-parallax="0.25">Cette robe est aspirée au niveau du ventre grace à des debut de pince comme un corp qui prend forme et degouline autour.</p>
+        <p v-parallax="0.25">Cette robe est aspirée au niveau du ventre grâce à des débuts de pinces comme un corps qui prend forme et dégouline autour.</p>
       </div>
   </div>
 </div>  

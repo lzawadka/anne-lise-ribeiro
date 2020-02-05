@@ -4,7 +4,8 @@
     <img  v-parallax="0.15" class="Inspiration11" src="./../../assets/pictures/Inspiration/Inspiration11.png" alt="">
     <div class="secondRectangle"></div>
     <img v-parallax="-0.25" class="Inspiration10" src="./../../assets/pictures/Inspiration/Inspiration10.png" alt="">
-    <p>Pour creer mes imprimés, je me suis interrésés aux tatouages de tribus qui sont sensé protégés la peau </p>
+    <p>Pour créer mes imprimés, je me suis intérressée aux tatouages de tribus
+qui sont censés protéger la peau. </p>
   </div>
 
   <div class="first-part" v-scroll-reveal.reset="{ delay: 150 }">
