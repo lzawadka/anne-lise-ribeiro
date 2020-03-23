@@ -5,7 +5,7 @@
     <footer-container class="footer"/>
     <div class="onMobile">
       <div>
-        <p>Le site n'est toujours pas disponible sur mobile veuillez revenir sur mobile.</p>
+        <p>Le site n'est toujours pas disponible sur mobile veuillez revenir sur ordinateur.</p>
       </div>
     </div>
   </div>
