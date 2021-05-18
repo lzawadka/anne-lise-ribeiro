@@ -42,11 +42,11 @@ body .title {
 }
 
 body nav {
-  -webkit-transform: translate(0px, 20px);
-          transform: translate(0px, 20px);
+  /* -webkit-transform: translate(0px, 20px); */
+  /* transform: translate(0px, 20px); */
   right: 0;
   position: fixed;
-  padding: 10px;
+  padding-right: 10px;
   z-index: 2;
 }
 
@@ -97,17 +97,17 @@ body .content {
 
 body .content .firstPicturesContainer {
   -webkit-transform: translateY(10vh);
-          transform: translateY(10vh);
+  transform: translateY(10vh);
 }
 
 body .content .secondPicturesContainer {
   -webkit-transform: translateY(5vh);
-          transform: translateY(5vh);
+  transform: translateY(5vh);
 }
 
 body .content .thirdPicturesContainer {
   -webkit-transform: translateY(15vh);
-          transform: translateY(15vh);
+  transform: translateY(15vh);
 }
 
 body .content .sub-content {
@@ -140,27 +140,27 @@ body .content .sub-content .bigPictures {
   }
   body .content .firstPicturesContainer {
     -webkit-transform: translateY(0vh);
-            transform: translateY(0vh);
+    transform: translateY(0vh);
   }
   body .content .secondPicturesContainer {
     -webkit-transform: translateY(0vh);
-            transform: translateY(0vh);
+    transform: translateY(0vh);
   }
   body .content .thirdPicturesContainer {
     -webkit-transform: translateY(0vh);
-            transform: translateY(0vh);
+    transform: translateY(0vh);
   }
   body .content .sub-content {
     -webkit-box-orient: vertical !important;
     -webkit-box-direction: normal !important;
-        -ms-flex-direction: column !important;
-            flex-direction: column !important;
+    -ms-flex-direction: column !important;
+    flex-direction: column !important;
     -webkit-box-align: center !important;
-        -ms-flex-align: center !important;
-            align-items: center !important;
+    -ms-flex-align: center !important;
+    align-items: center !important;
     -webkit-box-pack: unset !important;
-        -ms-flex-pack: unset !important;
-            justify-content: unset !important;
+    -ms-flex-pack: unset !important;
+    justify-content: unset !important;
   }
   .cv {
     width: 100vw;
