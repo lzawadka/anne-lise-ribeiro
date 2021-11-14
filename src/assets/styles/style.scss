@@ -10,6 +10,15 @@ a {
   max-width: 70vw;
 }
 
+.pdfCV:after {
+  content: "";
+  display: block;
+  height: 70px;
+  background-image: url(http://placehold.it/350x65);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
 .containerCV {
   width: 100vw;
 
