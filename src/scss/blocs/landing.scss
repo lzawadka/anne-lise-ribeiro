@@ -1,0 +1,74 @@
+.landing {
+    background-color: $landingColor;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 20%;
+    &__header {
+        font-size: 36px;
+        margin-top: 5%;
+    }
+    &__header-year {
+        margin-top: 8px;
+        display: flex;
+        position: relative;
+        &::before {
+            content: "";
+            height: 4px;
+            width: 30vw;
+            background-color: #000;
+            position: absolute; 
+            margin: auto;
+            top: 0;
+            bottom: 0;
+            left: 90px;
+            animation: apear 3s ease-in-out;
+        }
+    }
+    &__body {
+        align-self: center;
+        &::before {
+            content: "";
+            height: 125vh;
+            width: 4px;
+            background-color: #000;
+            position: absolute;
+            transform: translate(-4vw, 10px);
+            animation: apearDown 2s ease-in-out;
+        }
+    }
+    &__body-title {
+        font-size: 218px;
+    }
+    &__body-description {
+        margin-left: 50%;
+        font-size: 96px;
+        width: 100%;
+    }
+}
+
+@keyframes apear {
+    from {
+        width: 0%;
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    to {
+        width: 30vw;
+    }
+}
+
+@keyframes apearDown {
+    from {
+        height: 0vh;
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    to {
+        height: 125vh;
+    }
+}

@@ -1,0 +1,26 @@
+.description {
+    display: flex;
+    flex-direction: column;
+    background-color: $descriptionColor;
+    font-size: 29px;
+    padding: 0 0 0 10%;
+    justify-content: center;
+    &__title {
+        font-size: 94px;
+    }
+    &__text {
+        margin-top: 68px;
+        text-align: left;
+        width: 60vw;
+    }
+    &__contact {
+        margin-top: 68px;
+        font-size: 70px;
+    }
+    &__phone {
+        margin-top: 39px;
+    }
+    &__email {
+        margin-top: 26px;
+    }
+}
