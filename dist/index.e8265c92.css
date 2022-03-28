@@ -159,6 +159,7 @@ table {
 }
 
 .printDesign__page {
+  opacity: 0;
   align-self: flex-start;
   align-items: center;
   gap: 50px;
@@ -204,6 +205,11 @@ body {
 
 body > * {
   min-height: 100vh;
+}
+
+.appear {
+  opacity: 1;
+  transition: all 2s;
 }
 
 /*# sourceMappingURL=index.e8265c92.css.map */

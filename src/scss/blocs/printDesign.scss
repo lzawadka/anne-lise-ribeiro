@@ -3,6 +3,7 @@
     display: flex;
     justify-content: space-between;
     &__page {
+        opacity: 0;
         align-self: flex-start;
         overflow: hidden;
         padding: 5% 0 0 2%;

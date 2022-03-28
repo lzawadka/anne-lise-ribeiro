@@ -10,3 +10,8 @@ body {
         min-height: 100vh;
     }
 }
+
+.appear {
+    transition: 2s;
+    opacity: 1;
+}
