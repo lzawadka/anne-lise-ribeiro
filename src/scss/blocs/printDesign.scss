@@ -1,0 +1,38 @@
+.printDesign {
+    background-color: $printDesignColor;
+    display: flex;
+    justify-content: space-between;
+    &__page {
+        align-self: flex-start;
+        overflow: hidden;
+        padding: 5% 0 0 2%;
+        gap: 50px;
+        display: flex;
+        align-items: center;
+    }
+    &__title {
+        font-size: 49px;
+    }
+    &__number {
+        position: relative;
+        font-size: 75px;
+        &::after {
+            content: "";
+            top: -150%;
+            left: 130%;
+            position: absolute;
+            background-color: black;
+            width: 4px;
+            height: 300px;
+        }
+    }
+    &__img {
+        align-self: center;
+        width: 50%;
+    }
+    &__arrow {
+        margin: 0 10% 5% 0;
+        align-self: flex-end;
+        height: 5%;
+    }
+}

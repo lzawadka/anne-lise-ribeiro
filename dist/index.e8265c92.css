@@ -140,20 +140,61 @@ table {
 .description__text {
   text-align: left;
   width: 60vw;
-  margin-top: 68px;
+  margin-top: 3%;
 }
 
 .description__contact {
-  margin-top: 68px;
+  margin-top: 3%;
   font-size: 70px;
 }
 
-.description__phone {
-  margin-top: 39px;
+.description__phone, .description__email {
+  margin-top: 2%;
 }
 
-.description__email {
-  margin-top: 26px;
+.printDesign {
+  background-color: #6a8977;
+  justify-content: space-between;
+  display: flex;
+}
+
+.printDesign__page {
+  align-self: flex-start;
+  align-items: center;
+  gap: 50px;
+  padding: 5% 0 0 2%;
+  display: flex;
+  overflow: hidden;
+}
+
+.printDesign__title {
+  font-size: 49px;
+}
+
+.printDesign__number {
+  font-size: 75px;
+  position: relative;
+}
+
+.printDesign__number:after {
+  content: "";
+  width: 4px;
+  height: 300px;
+  background-color: #000;
+  position: absolute;
+  top: -150%;
+  left: 130%;
+}
+
+.printDesign__img {
+  width: 50%;
+  align-self: center;
+}
+
+.printDesign__arrow {
+  height: 5%;
+  align-self: flex-end;
+  margin: 0 10% 5% 0;
 }
 
 body {
