@@ -4,10 +4,12 @@ const options = {
     rootMargin: "0px",
     threshold: 0.5
 };
-const handleIntersect = (entries, observer)=>{
+const handleIntersect = (entries, observer1)=>{
     entries.forEach((entry)=>{
-        console.log(entry.intersectionRatio);
-        if (entry.intersectionRatio > ratio) entry.target.classList.add('appear');
+        if (entry.intersectionRatio > ratio) {
+            entry.target.classList.add('appear');
+            observer1.unobserve(entry.target);
+        }
     });
 };
 const observer = new IntersectionObserver(handleIntersect, options);

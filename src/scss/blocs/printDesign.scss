@@ -1,7 +1,7 @@
 .printDesign {
     background-color: $printDesignColor;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     &__page {
         opacity: 0;
         align-self: flex-start;

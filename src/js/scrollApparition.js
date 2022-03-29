@@ -7,10 +7,9 @@ const options = {
 
 const handleIntersect = (entries, observer) => {
     entries.forEach((entry) => {
-        console.log(entry.intersectionRatio)
         if (entry.intersectionRatio > ratio) {
             entry.target.classList.add('appear');
-            /* observer.unobserve(entry.target); */
+            observer.unobserve(entry.target);
         }
     })
 };

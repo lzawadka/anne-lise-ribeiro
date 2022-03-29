@@ -38,12 +38,76 @@ table {
   src: url("Ginger.b31f4c12.ttf") format("truetype"), url("Ginger.0b0fdc5c.otf") format("otf"), url("Ginger.3139b065.woff") format("woff");
 }
 
+*, :before, :after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.carousel {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.container {
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.slider {
+  padding: 5% 0 0;
+}
+
+.slider__img {
+  display: none;
+}
+
+img.active {
+  height: 80vh;
+  margin: auto;
+  animation: fade .8s;
+  display: block;
+  left: 0;
+  right: 0;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.btn-nav {
+  cursor: pointer;
+  background-color: #0000;
+  border: none;
+  margin: 0 15px;
+  font-size: 40px;
+  position: absolute;
+  bottom: 0;
+}
+
+.left {
+  transform: rotate(180deg);
+}
+
+.right {
+  right: 0;
+}
+
 .landing {
   background-color: #a7b4a8;
   flex-direction: row-reverse;
   justify-content: space-between;
   padding: 0 12%;
   display: flex;
+  overflow: hidden;
 }
 
 .landing__header {
@@ -154,7 +218,7 @@ table {
 
 .printDesign {
   background-color: #6a8977;
-  justify-content: space-between;
+  flex-direction: column;
   display: flex;
 }
 
@@ -204,7 +268,7 @@ body {
 }
 
 body > * {
-  min-height: 100vh;
+  height: 100vh;
 }
 
 .appear {
