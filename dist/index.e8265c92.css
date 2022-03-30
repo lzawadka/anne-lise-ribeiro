@@ -56,21 +56,13 @@ table {
   position: relative;
 }
 
-.slider {
-  padding: 5% 0 0;
-}
-
 .slider__img {
   display: none;
 }
 
 img.active {
-  height: 80vh;
-  margin: auto;
   animation: fade .8s;
   display: block;
-  left: 0;
-  right: 0;
 }
 
 @keyframes fade {
@@ -136,6 +128,7 @@ img.active {
 
 .landing__body {
   align-self: center;
+  animation: apear2 3s ease-in-out;
 }
 
 .landing__body:before {
@@ -156,6 +149,16 @@ img.active {
   width: 100%;
   margin-left: 50%;
   font-size: 96px;
+}
+
+@keyframes apear2 {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes apear {
@@ -218,18 +221,16 @@ img.active {
 
 .printDesign {
   background-color: #6a8977;
-  flex-direction: column;
-  display: flex;
 }
 
 .printDesign__page {
   opacity: 0;
+  z-index: 1;
   align-self: flex-start;
   align-items: center;
   gap: 50px;
   padding: 5% 0 0 2%;
   display: flex;
-  overflow: hidden;
 }
 
 .printDesign__title {
@@ -244,22 +245,62 @@ img.active {
 .printDesign__number:after {
   content: "";
   width: 4px;
-  height: 300px;
+  height: 220px;
   background-color: #000;
   position: absolute;
   top: -150%;
   left: 130%;
 }
 
+.printDesign__slider {
+  padding: 5% 0 0;
+}
+
 .printDesign__img {
-  width: 50%;
-  align-self: center;
+  height: 80vh;
+  margin: auto;
+  left: 0;
+  right: 0;
 }
 
 .printDesign__arrow {
   height: 5%;
   align-self: flex-end;
   margin: 0 10% 5% 0;
+}
+
+.projectEspelet {
+  background-color: #fbfeff;
+}
+
+.projectEspelet__img {
+  height: 100%;
+  width: 100%;
+  object-fit: scale-down;
+  object-position: right;
+  margin: auto;
+  left: 0;
+  right: 0;
+}
+
+.projectEspelet__slider {
+  height: 100%;
+}
+
+.capsuleCollection {
+  background-color: #bdb2a8;
+}
+
+.sectiontradList {
+  background-color: #d5e2db;
+}
+
+.bretonVedrenne {
+  background-color: #ebe7e4;
+}
+
+.anneLiseLogo {
+  background-color: #bbbcaa;
 }
 
 body {
@@ -269,6 +310,12 @@ body {
 
 body > * {
   height: 100vh;
+}
+
+.mainContent {
+  flex-direction: column;
+  display: flex;
+  overflow: hidden;
 }
 
 .appear {

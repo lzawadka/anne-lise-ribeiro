@@ -28,6 +28,7 @@
     }
     &__body {
         align-self: center;
+        animation: apear2 3s ease-in-out;
         &::before {
             content: "";
             height: 125vh;
@@ -45,6 +46,15 @@
         margin-left: 50%;
         font-size: 96px;
         width: 100%;
+    }
+}
+
+@keyframes apear2 {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
     }
 }
 

@@ -9,6 +9,7 @@ function slideSuivante() {
     else count = 0;
     items[count].classList.add('active');
     console.log(count);
+    console.log(items);
 }
 suivant.addEventListener('click', slideSuivante);
 function slidePrecedente() {

@@ -12,6 +12,12 @@ body {
     }
 }
 
+.mainContent {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
 .appear {
     transition: 2s;
     opacity: 1;

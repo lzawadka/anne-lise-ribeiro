@@ -1,0 +1,16 @@
+.projectEspelet {
+    background-color: #FBFEFF;
+
+    &__img {
+        height: 100%;
+        width: 100%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        object-fit: scale-down;
+        object-position: right;
+    }
+    &__slider {
+        height: 100%;
+    }
+}
