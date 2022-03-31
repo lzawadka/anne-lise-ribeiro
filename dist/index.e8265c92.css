@@ -54,6 +54,10 @@ table {
   height: 70vh;
 }
 
+.carousel__img-large {
+  height: 100vh;
+}
+
 .left {
   transform: rotate(180deg);
 }
@@ -202,6 +206,10 @@ table {
   display: flex;
 }
 
+.printDesign__page--allPage {
+  position: absolute;
+}
+
 .printDesign__title {
   font-size: 49px;
 }
@@ -219,10 +227,6 @@ table {
   position: absolute;
   top: -150%;
   left: 130%;
-}
-
-.printDesign__slider {
-  padding: 5% 0 0;
 }
 
 .printDesign__img {
@@ -252,6 +256,20 @@ table {
   right: 0;
 }
 
+.projectEspelet__espelet {
+  opacity: 0;
+  width: 40%;
+  position: absolute;
+  bottom: 0;
+  left: -10%;
+}
+
+.projectEspelet__carousel-first {
+  object-fit: scale-down;
+  object-position: right;
+  width: 100%;
+}
+
 .projectEspelet__slider {
   height: 100%;
 }
@@ -266,6 +284,11 @@ table {
 
 .bretonVedrenne {
   background-color: #ebe7e4;
+}
+
+.bretonVedrenne__carousel-full {
+  width: 100%;
+  object-fit: cover;
 }
 
 .anneLiseLogo {
@@ -295,6 +318,12 @@ body > * {
 .appear {
   opacity: 1;
   transition: all 2s;
+}
+
+.slide {
+  opacity: 1;
+  transition: all 2s;
+  left: 0;
 }
 
 /*# sourceMappingURL=index.e8265c92.css.map */

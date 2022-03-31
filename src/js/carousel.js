@@ -21,7 +21,7 @@ next.addEventListener('click', () => printDesignCarousel.next());
 const projectEspeletCarousel = new Siema({
     selector: '.projectEspelet__carousel',
     loop: true,
-    duration: 100,
+    duration: 300,
     easing: 'ease-in',
     perPage: 1
 });
@@ -29,8 +29,28 @@ const projectEspeletCarousel = new Siema({
 const prevProjectEspelet = document.getElementById('projectEspelet_prev');
 const nextProjectEspelet = document.getElementById('projectEspelet_next');
     
-prevProjectEspelet.addEventListener('click', () => projectEspeletCarousel.prev());
-nextProjectEspelet.addEventListener('click', () => projectEspeletCarousel.next());
+prevProjectEspelet.addEventListener('click', () => {
+    projectEspeletCarousel.prev();
+    const indexOfCurrent = projectEspeletCarousel.currentSlide;
+    if (indexOfCurrent !== 0) {
+        document.getElementById('espelet').style.opacity = "0";
+        document.getElementById('test').style.opacity = "0";
+    } else {
+        document.getElementById('espelet').style.opacity = "1";
+        document.getElementById('test').style.opacity = "1";
+    }
+});
+nextProjectEspelet.addEventListener('click', () => {
+    projectEspeletCarousel.next();
+    const indexOfCurrent = projectEspeletCarousel.currentSlide;
+    if (indexOfCurrent !== 0) {
+        document.getElementById('espelet').style.opacity = "0";
+        document.getElementById('test').style.opacity = "0";
+    } else {
+        document.getElementById('espelet').style.opacity = "1";
+        document.getElementById('test').style.opacity = "1";
+    }
+});
 
 // CAPSULECOLLECTION
 

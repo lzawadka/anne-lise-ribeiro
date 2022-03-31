@@ -12,9 +12,18 @@ const handleIntersect = (entries, observer1)=>{
         }
     });
 };
+const handleIntersectEspelet = (entrie, observer3)=>{
+    console.log(entrie[0]);
+    if (entrie[0].intersectionRatio > ratio) {
+        entrie[0].target.classList.add('slide');
+        observer3.unobserve(entrie[0].target);
+    }
+};
 const observer = new IntersectionObserver(handleIntersect, options);
 document.querySelectorAll('.printDesign__page').forEach((r)=>{
     observer.observe(r);
 });
+const observer2 = new IntersectionObserver(handleIntersectEspelet, options);
+observer2.observe(document.getElementById('espelet'));
 
 //# sourceMappingURL=index.98bc5bdb.js.map
