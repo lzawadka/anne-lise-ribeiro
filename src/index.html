@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="scss/style.scss">
+    <script defer type="module" src="https://pawelgrzybek.github.io/siema/assets/siema.min.js"></script>
+    <script defer type="module" src="./js/carousel.js"></script>
     <script defer src="./js/scrollApparition.js"></script>
-    <script defer src="./js/carousel.js"></script>
 </head>
 <body>
     <div class="landing">
@@ -35,122 +36,116 @@
             <p class="printDesign__number">01</p>
             <h2 class="printDesign__title">PRINT<br/>DESIGN</h2>
         </div>
-        <div class="carousel">
-            <div class="container">
-                <div class="slider printDesign__slider">
-                    <img class="slider__img printDesign__img active" src="../assets/printGreen/foulard_soie_vert.png">
-                    <img class="slider__img printDesign__img" src="../assets/printGreen/jungle_vert.png">
-                    <img class="slider__img printDesign__img" src="../assets/printGreen/foulard_soie_giraffe_bleu_vert.png">
-                    <img class="slider__img printDesign__img" src="../assets/printGreen/giraffe_vert.png">
-                    <img class="slider__img printDesign__img" src="../assets/printGreen/foulard_soie_bleu.png">
-                    <img class="slider__img printDesign__img" src="../assets/printGreen/jungle_bleu.png">
-                    <img class="slider__img printDesign__img" src="../assets/printGreen/foulard_soie_noir_et_blanc.png">
-                    <img class="slider__img printDesign__img" src="../assets/printGreen/jungle_2_noir_et_blanc.png">
-                    <img class="slider__img printDesign__img" src="../assets/printGreen/foulard_soie_rose_et_rouge.png">
-                    <img class="slider__img printDesign__img" src="../assets/printGreen/jungle_2_rose_et_rouge.png">
-                    <img class="slider__img printDesign__img" src="../assets/printGreen/foulard_soie_bordeau.png">
-                    <img class="slider__img printDesign__img" src="../assets/printGreen/jungle_bordeau.png">
-                </div>
-                <button class="btn-nav left"><img src="../assets/arrow.png" alt="arrow"></button>
-                <button class="btn-nav right"><img src="../assets/arrow.png" alt="arrow"></button>
-            </div>
+        <div class="printDesign__carousel carousel ">
+            <img class="carousel__img" src="../assets/printGreen/foulard_soie_vert.png">
+            <img class="carousel__img" src="../assets/printGreen/jungle_vert.png">
+            <img class="carousel__img" src="../assets/printGreen/foulard_soie_giraffe_bleu_vert.png">
+            <img class="carousel__img" src="../assets/printGreen/giraffe_vert.png">
+            <img class="carousel__img" src="../assets/printGreen/foulard_soie_bleu.png">
+            <img class="carousel__img"src="../assets/printGreen/jungle_bleu.png">
+            <img class="carousel__img" src="../assets/printGreen/foulard_soie_noir_et_blanc.png">
+            <img class="carousel__img" src="../assets/printGreen/jungle_2_noir_et_blanc.png">
+            <img class="carousel__img" src="../assets/printGreen/foulard_soie_rose_et_rouge.png">
+            <img class="carousel__img" src="../assets/printGreen/jungle_2_rose_et_rouge.png">
+            <img class="carousel__img" src="../assets/printGreen/foulard_soie_bordeau.png">
+            <img class="carousel__img" src="../assets/printGreen/jungle_bordeau.png">
         </div>
+        <button id="printDesign_prev" class="carousel__btn left"><img src="../assets/arrow.png" alt="arrow"></button>
+        <button id="printDesign_next" class="carousel__btn right"><img src="../assets/arrow.png" alt="arrow"></button>
     </div>
     <div class="projectEspelet mainContent">
         <div class="printDesign__page">
             <p class="printDesign__number">02</p>
             <h2 class="printDesign__title">FETE DU PIMENT<br/>D’ESPELETTTE </h2>
         </div>
-        <div class="carousel">
-            <div class="container">
-                <div class="slider projectEspelet__slider">
-                    <img class="slider__img projectEspelet__img active" src="../assets/projetEspelet/407.png">
-                    <img class="slider__img projectEspelet__img" src="../assets/projetEspelet/fete_piment_espelette2.jpg">
-                    <img class="slider__img projectEspelet__img" src="../assets/projetEspelet/fete_piment_espelette.jpg">
-                </div>
-                <button class="btn-nav left"><img src="../assets/arrow.png" alt="arrow"></button>
-                <button class="btn-nav right"><img src="../assets/arrow.png" alt="arrow"></button>
-            </div>
+        <div class="projectEspelet__carousel carousel">
+            <img class="carousel__img" src="../assets/projetEspelet/407.png">
+            <img class="carousel__img" src="../assets/projetEspelet/fete_piment_espelette2.jpg">
+            <img class="carousel__img" src="../assets/projetEspelet/fete_piment_espelette.jpg">
         </div>
+        <button id="projectEspelet_prev" class="carousel__btn left"><img src="../assets/arrow.png" alt="arrow"></button>
+        <button id="projectEspelet_next" class="carousel__btn right"><img src="../assets/arrow.png" alt="arrow"></button>
     </div>
     <div class="capsuleCollection mainContent">
         <div class="printDesign__page">
             <p class="printDesign__number">03</p>
             <h2 class="printDesign__title">COLLECTION<br/>CAPSULE</h2>
         </div>
-        <div class="carousel">
-            <div class="container">
-                <div class="slider projectEspelet__slider">
-                    <img class="slider__img projectEspelet__img active" src="../assets/capsuleCollection/BOOK_PART_1_1.png">
-                    <img class="slider__img projectEspelet__img" src="../assets/capsuleCollection/BOOK_PART_1_2.png">
-                    <img class="slider__img projectEspelet__img" src="../assets/capsuleCollection/BOOK_PART_2_1.png">
-                    <img class="slider__img projectEspelet__img" src="../assets/capsuleCollection/BOOK_PART_2_2.png">
-                </div>
-                <button class="btn-nav left"><img src="../assets/arrow.png" alt="arrow"></button>
-                <button class="btn-nav right"><img src="../assets/arrow.png" alt="arrow"></button>
-            </div>
+        <div class="capsuleCollection__carousel carousel">
+            <img class="carousel__img" src="../assets/capsuleCollection/BOOK_PART_1_1.png">
+            <img class="carousel__img" src="../assets/capsuleCollection/BOOK_PART_1_2.png">
+            <img class="carousel__img" src="../assets/capsuleCollection/BOOK_PART_2_1.png">
+            <img class="carousel__img" src="../assets/capsuleCollection/BOOK_PART_2_2.png">
         </div>
+        <button id="capsuleCollection_prev" class="carousel__btn left"><img src="../assets/arrow.png" alt="arrow"></button>
+        <button id="capsuleCollection_next" class="carousel__btn right"><img src="../assets/arrow.png" alt="arrow"></button>
     </div>
     <div class="sectiontradiList mainContent">
         <div class="printDesign__page">
             <p class="printDesign__number">04</p>
             <h2 class="printDesign__title">APPLICATION<br/>TRADILIST</h2>
         </div>
-        <div class="carousel">
-            <div class="container">
-                <div class="slider projectEspelet__slider">
-                    <img class="slider__img projectEspelet__img active" src="../assets/projetEspelet/407.png">
-                    <img class="slider__img projectEspelet__img" src="../assets/projetEspelet/fete_piment_espelette2.jpg">
-                    <img class="slider__img projectEspelet__img" src="../assets/projetEspelet/fete_piment_espelette.jpg">
-                </div>
-                <button class="btn-nav left"><img src="../assets/arrow.png" alt="arrow"></button>
-                <button class="btn-nav right"><img src="../assets/arrow.png" alt="arrow"></button>
-            </div>
+        <div class="sectiontradiList__carousel carousel">
+            <video class="carousel__img" controls width="70%">
+                <source src="../assets/sectiontradList/telephone_Trim.mp4" type="video/mp4">
+            </video>
+            <img class="carousel__img" src="../assets/sectiontradList/Group_2.png">
+            <img class="carousel__img" src="../assets/sectiontradList/Group_3.png">
         </div>
+        <button id="sectiontradiList_prev"  class="carousel__btn left"><img src="../assets/arrow.png" alt="arrow"></button>
+        <button id="sectiontradiList_next" class="carousel__btn right"><img src="../assets/arrow.png" alt="arrow"></button>
     </div>
     <div class="bretonVedrenne mainContent">
         <div class="printDesign__page">
             <p class="printDesign__number">05</p>
             <h2 class="printDesign__title">LOGO<br/>BRETONVEDRENNE</h2>
         </div>
-        <div class="carousel">
-            <div class="container">
-                <div class="slider projectEspelet__slider">
-                    <img class="slider__img projectEspelet__img active" src="../assets/bretonVedrenne/Group_5.png">
-                    <img class="slider__img projectEspelet__img" src="../assets/bretonVedrenne/Group_4.png">
-                    <img class="slider__img projectEspelet__img" src="../assets/bretonVedrenne/mockup_polo_1.png">
-                </div>
-                <button class="btn-nav left"><img src="../assets/arrow.png" alt="arrow"></button>
-                <button class="btn-nav right"><img src="../assets/arrow.png" alt="arrow"></button>
-            </div>
+        <div class="bretonVedrenne__carousel carousel">
+            <img class="carousel__img" src="../assets/bretonVedrenne/Group_5.png">
+            <img class="carousel__img" src="../assets/bretonVedrenne/Group_4.png">
+            <img class="carousel__img" src="../assets/bretonVedrenne/mockup_polo_1.png">
         </div>
+        <button id="bretonVedrenne_prev" class="carousel__btn left"><img src="../assets/arrow.png" alt="arrow"></button>
+        <button id="bretonVedrenne_next" class="carousel__btn right"><img src="../assets/arrow.png" alt="arrow"></button>
     </div>
     <div class="anneLiseLogo mainContent">
         <div class="printDesign__page">
             <p class="printDesign__number">06</p>
             <h2 class="printDesign__title">LOGO<br/>ANNELISE</h2>
         </div>
-        <div class="container">
-            <div class="slider projectEspelet__slider">
-                <img class="slider__img projectEspelet__img active" src="../assets/anneliseLogo/Group_6.png">
-                <img class="slider__img projectEspelet__img" src="../assets/anneliseLogo/Group_7.png">
-                <img class="slider__img projectEspelet__img" src="../assets/anneliseLogo/Pastille_1.png">
-            </div>
-            <button class="btn-nav left"><img src="../assets/arrow.png" alt="arrow"></button>
-            <button class="btn-nav right"><img src="../assets/arrow.png" alt="arrow"></button>
+        <div class="anneLiseLogo__carousel carousel">
+            <img class="carousel__img" src="../assets/anneliseLogo/Group_6.png">
+            <img class="carousel__img" src="../assets/anneliseLogo/Group_7.png">
+            <img class="carousel__img" src="../assets/anneliseLogo/Pastille_1.png">
         </div>
+        <button id="anneLiseLogo_prev" class="carousel__btn left"><img src="../assets/arrow.png" alt="arrow"></button>
+        <button id="anneLiseLogo_next" class="carousel__btn right"><img src="../assets/arrow.png" alt="arrow"></button>
     </div>
     <div class="illustration mainContent">
         <div class="printDesign__page">
             <p class="printDesign__number">07</p>
             <h2 class="printDesign__title">AFFICHE<br/>ILLUSTRATION</h2>
         </div>
+        <div class="illustration__carousel carousel">
+            <img class="carousel__img" src="../assets/illustration/K.png">
+            <img class="carousel__img" src="../assets/illustration/mockup_affiche_lille.png">
+            <img class="carousel__img" src="../assets/illustration/mockup_affiche_PORT_GRIMAUD.png">
+            <img class="carousel__img" src="../assets/illustration/O.png">
+        </div>
+        <button id="illustration_prev" class="carousel__btn left"><img src="../assets/arrow.png" alt="arrow"></button>
+        <button id="illustration_next" class="carousel__btn right"><img src="../assets/arrow.png" alt="arrow"></button>
     </div>
     <div class="ennediag mainContent">
         <div class="printDesign__page">
             <p class="printDesign__number">08</p>
             <h2 class="printDesign__title">FLYER<br/>ENNEADIAG</h2>
         </div>
+        <div class="ennediag__carousel carousel">
+            <img class="carousel__img" src="../assets/ennediag/brochure_enneadiag.png">
+            <img class="carousel__img" src="../assets/ennediag/carte_visite_enneadiag.png">
+        </div>
+        <button id="ennediag_prev" class="carousel__btn left"><img src="../assets/arrow.png" alt="arrow"></button>
+        <button id="ennediag_next" class="carousel__btn right"><img src="../assets/arrow.png" alt="arrow"></button>
     </div>
 </body>
 </html>

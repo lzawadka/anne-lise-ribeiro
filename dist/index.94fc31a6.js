@@ -2,23 +2,37 @@ const items = document.querySelectorAll('.slider__img');
 const nbSlide = items.length;
 const suivant = document.querySelector('.right');
 const precedent = document.querySelector('.left');
-let count = 0;
-function slideSuivante() {
+let count = 0; /* import Siema from 'siema';
+const mySiema = new Siema(); */  /* document.querySelector('.right').addEventListener('click', () => mySiema.next());
+document.querySelector('.left').addEventListener('click', () => mySiema.prev()); */  /* function slideSuivante(){
     items[count].classList.remove('active');
-    if (count < nbSlide - 1) count++;
-    else count = 0;
-    items[count].classList.add('active');
+
+    if(count < nbSlide - 1){
+        count++;
+    } else {
+        count = 0;
+    }
+
+    items[count].classList.add('active')
     console.log(count);
-    console.log(items);
+    console.log(items)
 }
-suivant.addEventListener('click', slideSuivante);
-function slidePrecedente() {
+suivant.addEventListener('click', slideSuivante)
+
+
+function slidePrecedente(){
     items[count].classList.remove('active');
-    if (count > 0) count--;
-    else count = nbSlide - 1;
-    items[count].classList.add('active');
-// console.log(count);
+
+    if(count > 0){
+        count--;
+    } else {
+        count = nbSlide - 1;
+    }
+
+    items[count].classList.add('active')
+    // console.log(count);
+    
 }
-precedent.addEventListener('click', slidePrecedente);
+precedent.addEventListener('click', slidePrecedente) */ 
 
 //# sourceMappingURL=index.94fc31a6.js.map

@@ -10,6 +10,7 @@
     "parcel": "latest"
   },
   "dependencies": {
-    "sass": "^1.49.9"
+    "sass": "^1.49.9",
+    "siema": "^1.5.1"
   }
 }

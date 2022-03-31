@@ -12,10 +12,15 @@ body {
     }
 }
 
+#forest-ext-shadow-host {
+    display: none;
+}
+
 .mainContent {
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    position: relative;
 }
 
 .appear {
