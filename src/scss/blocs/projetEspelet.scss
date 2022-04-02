@@ -25,4 +25,14 @@
     &__slider {
         height: 100%;
     }
+    &__second {
+        object-fit: scale-down;
+        object-position: left;
+        width: 100%;
+    }
+    &__third {
+        object-fit: scale-down;
+        object-position: right;
+        width: 100%;
+    }
 }

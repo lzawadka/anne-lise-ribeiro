@@ -6,7 +6,8 @@
         border: none;
         position: absolute;
         bottom: 0;
-        padding: 0px 10px 40px 0px;
+        padding: 0px 30px 0px 20px;
+        
     }
     &__img {
         height: 90vh;
@@ -16,13 +17,32 @@
     }
 }
 .left {
-    transform: rotate(180deg);
-    padding: 40px 10px 0 0;
+    transform: rotate(180deg) translateY(65px);
+    padding: 0px 30px 0 20px;
+    &:hover {
+        transform: rotate(180deg) translate(20px, 65px);
+    }
 }
 .right {
+    transform: translateY(-65px);
     right: 0;
+    &:hover {
+        transform: translate(20px, -65px);
+    }
 }
 
 .last {
     width: 100vw;
+}
+
+.left__bloc {
+    height: 65px;
+    position: relative;
+    pointer-events: none;
+}
+
+.right__bloc {
+    height: 65px;
+    position: relative;
+    pointer-events: none;
 }

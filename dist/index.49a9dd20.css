@@ -46,7 +46,7 @@ table {
 .carousel__btn {
   background-color: #0000;
   border: none;
-  padding: 0 10px 40px 0;
+  padding: 0 30px 0 20px;
   position: absolute;
   bottom: 0;
 }
@@ -60,16 +60,31 @@ table {
 }
 
 .left {
-  padding: 40px 10px 0 0;
-  transform: rotate(180deg);
+  padding: 0 30px 0 20px;
+  transform: rotate(180deg)translateY(65px);
+}
+
+.left:hover {
+  transform: rotate(180deg)translate(20px, 65px);
 }
 
 .right {
   right: 0;
+  transform: translateY(-65px);
+}
+
+.right:hover {
+  transform: translate(20px, -65px);
 }
 
 .last {
   width: 100vw;
+}
+
+.left__bloc, .right__bloc {
+  height: 65px;
+  pointer-events: none;
+  position: relative;
 }
 
 .landing {
@@ -167,7 +182,7 @@ table {
   }
 
   to {
-    height: 125vh;
+    height: 90vh;
   }
 }
 
@@ -288,6 +303,18 @@ table {
 
 .projectEspelet__slider {
   height: 100%;
+}
+
+.projectEspelet__second {
+  object-fit: scale-down;
+  object-position: left;
+  width: 100%;
+}
+
+.projectEspelet__third {
+  object-fit: scale-down;
+  object-position: right;
+  width: 100%;
 }
 
 .capsuleCollection {
