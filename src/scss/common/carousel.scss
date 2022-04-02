@@ -6,9 +6,10 @@
         border: none;
         position: absolute;
         bottom: 0;
+        padding: 0px 10px 40px 0px;
     }
     &__img {
-        height: 70vh;
+        height: 90vh;
     }
     &__img-large {
         height: 100vh;
@@ -16,7 +17,12 @@
 }
 .left {
     transform: rotate(180deg);
+    padding: 40px 10px 0 0;
 }
 .right {
     right: 0;
+}
+
+.last {
+    width: 100vw;
 }

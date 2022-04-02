@@ -31,12 +31,13 @@
         animation: apear2 3s ease-in-out;
         &::before {
             content: "";
-            height: 125vh;
+            height: 90vh;
             width: 4px;
             background-color: #000;
             position: absolute;
             transform: translate(-4vw, 10px);
             animation: apearDown 2s ease-in-out;
+            z-index: 0;
         }
     }
     &__body-title {

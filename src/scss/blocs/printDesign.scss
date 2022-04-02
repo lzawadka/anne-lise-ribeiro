@@ -1,6 +1,7 @@
 .printDesign {
     background-color: $printDesignColor;
     &__page {
+        position: absolute;
         opacity: 0;
         align-self: flex-start;
         padding: 5% 0 0 2%;
@@ -38,5 +39,8 @@
         margin: 0 10% 5% 0;
         align-self: flex-end;
         height: 5%;
+    }
+    &__carousel {
+        padding: 5vh 0;
     }
 }

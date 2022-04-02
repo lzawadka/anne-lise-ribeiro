@@ -1,0 +1,345 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: Ginger;
+  src: url("Ginger.e9e852a9.ttf") format("truetype"), url("Ginger.d566764a.otf") format("otf"), url("Ginger.41aa9de6.woff") format("woff");
+}
+
+.carousel {
+  text-align: center;
+  height: 100%;
+}
+
+.carousel__btn {
+  background-color: #0000;
+  border: none;
+  padding: 0 10px 40px 0;
+  position: absolute;
+  bottom: 0;
+}
+
+.carousel__img {
+  height: 90vh;
+}
+
+.carousel__img-large {
+  height: 100vh;
+}
+
+.left {
+  padding: 40px 10px 0 0;
+  transform: rotate(180deg);
+}
+
+.right {
+  right: 0;
+}
+
+.last {
+  width: 100vw;
+}
+
+.landing {
+  background-color: #a7b4a8;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  padding: 0 12%;
+  display: flex;
+  overflow: hidden;
+}
+
+.landing__header {
+  margin-top: 5%;
+  font-size: 36px;
+}
+
+.landing__header-year {
+  margin-top: 8px;
+  display: flex;
+  position: relative;
+}
+
+.landing__header-year:before {
+  content: "";
+  height: 4px;
+  width: 30vw;
+  background-color: #000;
+  margin: auto;
+  animation: apear 3s ease-in-out;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 90px;
+}
+
+.landing__body {
+  align-self: center;
+  animation: apear2 3s ease-in-out;
+}
+
+.landing__body:before {
+  content: "";
+  height: 90vh;
+  width: 4px;
+  z-index: 0;
+  background-color: #000;
+  animation: apearDown 2s ease-in-out;
+  position: absolute;
+  transform: translate(-4vw, 10px);
+}
+
+.landing__body-title {
+  font-size: 218px;
+}
+
+.landing__body-description {
+  width: 100%;
+  margin-left: 50%;
+  font-size: 96px;
+}
+
+@keyframes apear2 {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes apear {
+  from {
+    width: 0%;
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  to {
+    width: 30vw;
+  }
+}
+
+@keyframes apearDown {
+  from {
+    height: 0;
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  to {
+    height: 125vh;
+  }
+}
+
+.description {
+  background-color: #bdbead;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0 12%;
+  font-size: 25px;
+  display: flex;
+}
+
+.description__title {
+  font-size: 94px;
+}
+
+.description__text {
+  text-align: left;
+  width: 60vw;
+  margin-top: 3%;
+}
+
+.description__contact {
+  margin-top: 3%;
+  font-size: 70px;
+}
+
+.description__phone, .description__email {
+  margin-top: 2%;
+}
+
+.contact {
+  z-index: 3;
+}
+
+.printDesign {
+  background-color: #6a8977;
+}
+
+.printDesign__page {
+  opacity: 0;
+  z-index: 1;
+  align-self: flex-start;
+  align-items: center;
+  gap: 50px;
+  padding: 5% 0 0 2%;
+  display: flex;
+  position: absolute;
+}
+
+.printDesign__page--allPage {
+  position: absolute;
+}
+
+.printDesign__title {
+  font-size: 49px;
+}
+
+.printDesign__number {
+  font-size: 75px;
+  position: relative;
+}
+
+.printDesign__number:after {
+  content: "";
+  width: 4px;
+  height: 220px;
+  background-color: #000;
+  position: absolute;
+  top: -150%;
+  left: 130%;
+}
+
+.printDesign__img {
+  height: 80vh;
+  margin: auto;
+  left: 0;
+  right: 0;
+}
+
+.printDesign__arrow {
+  height: 5%;
+  align-self: flex-end;
+  margin: 0 10% 5% 0;
+}
+
+.printDesign__carousel {
+  padding: 5vh 0;
+}
+
+.projectEspelet {
+  background-color: #fbfeff;
+}
+
+.projectEspelet__img {
+  height: 100%;
+  width: 100%;
+  object-fit: scale-down;
+  object-position: right;
+  margin: auto;
+  left: 0;
+  right: 0;
+}
+
+.projectEspelet__espelet {
+  opacity: 0;
+  width: 40%;
+  position: absolute;
+  bottom: 0;
+  left: -10%;
+}
+
+.projectEspelet__carousel-first {
+  object-fit: scale-down;
+  object-position: right;
+  width: 100%;
+}
+
+.projectEspelet__slider {
+  height: 100%;
+}
+
+.capsuleCollection {
+  background-color: #bdb2a8;
+}
+
+.sectiontradiList {
+  background-color: #d6e3dc;
+}
+
+.bretonVedrenne {
+  background-color: #ebe7e4;
+}
+
+.bretonVedrenne__carousel-full {
+  width: 100%;
+  object-fit: cover;
+}
+
+.anneLiseLogo {
+  background-color: #bbbcaa;
+}
+
+body {
+  font-family: Ginger;
+  overflow-x: hidden;
+}
+
+body > * {
+  height: 100vh;
+}
+
+#forest-ext-shadow-host {
+  display: none;
+}
+
+.mainContent {
+  flex-direction: column;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.appear {
+  opacity: 1;
+  transition: all 2s;
+}
+
+.slide {
+  opacity: 1;
+  transition: all 2s;
+  left: 0;
+}
+
+/*# sourceMappingURL=index.49a9dd20.css.map */
