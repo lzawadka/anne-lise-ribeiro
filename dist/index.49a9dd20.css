@@ -218,6 +218,11 @@ table {
   z-index: 3;
 }
 
+.intro {
+  max-height: 90vh;
+  width: auto;
+}
+
 .printDesign {
   background-color: #6a8977;
 }
