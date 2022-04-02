@@ -525,12 +525,22 @@ const printDesignCarousel = new _siemaDefault.default({
     easing: 'ease-in',
     perPage: 1
 });
-const next = document.getElementById('printDesign_next');
-const prev = document.getElementById('printDesign_prev');
-prev.addEventListener('click', ()=>printDesignCarousel.prev()
-);
-next.addEventListener('click', ()=>printDesignCarousel.next()
-);
+const nextDesignCarousel = document.getElementById('printDesign_next');
+const prevDesignCarousel = document.getElementById('printDesign_prev');
+// prev.addEventListener('click', () => printDesignCarousel.prev());
+// next.addEventListener('click', () => printDesignCarousel.next());
+prevDesignCarousel.addEventListener('click', ()=>{
+    printDesignCarousel.prev();
+    const indexOfCurrent = printDesignCarousel.currentSlide;
+    if (indexOfCurrent !== 0) document.getElementById('printDesignPage').style.opacity = "0";
+    else document.getElementById('printDesignPage').style.opacity = "1";
+});
+nextDesignCarousel.addEventListener('click', ()=>{
+    printDesignCarousel.next();
+    const indexOfCurrent = printDesignCarousel.currentSlide;
+    if (indexOfCurrent !== 0) document.getElementById('printDesignPage').style.opacity = "0";
+    else document.getElementById('printDesignPage').style.opacity = "1";
+});
 // ESPELET
 const projectEspeletCarousel = new _siemaDefault.default({
     selector: '.projectEspelet__carousel',
