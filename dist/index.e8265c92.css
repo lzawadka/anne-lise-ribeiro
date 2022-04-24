@@ -46,12 +46,13 @@ table {
 .carousel__btn {
   background-color: #0000;
   border: none;
+  padding: 0 30px 0 20px;
   position: absolute;
   bottom: 0;
 }
 
 .carousel__img {
-  height: 70vh;
+  height: 90vh;
 }
 
 .carousel__img-large {
@@ -59,11 +60,31 @@ table {
 }
 
 .left {
-  transform: rotate(180deg);
+  padding: 0 30px 0 20px;
+  transform: rotate(180deg)translateY(65px);
+}
+
+.left:hover {
+  transform: rotate(180deg)translate(20px, 65px);
 }
 
 .right {
   right: 0;
+  transform: translateY(-65px);
+}
+
+.right:hover {
+  transform: translate(20px, -65px);
+}
+
+.last {
+  width: 100vw;
+}
+
+.left__bloc, .right__bloc {
+  height: 65px;
+  pointer-events: none;
+  position: relative;
 }
 
 .landing {
@@ -106,8 +127,9 @@ table {
 
 .landing__body:before {
   content: "";
-  height: 125vh;
+  height: 90vh;
   width: 4px;
+  z-index: 0;
   background-color: #000;
   animation: apearDown 2s ease-in-out;
   position: absolute;
@@ -160,7 +182,7 @@ table {
   }
 
   to {
-    height: 125vh;
+    height: 90vh;
   }
 }
 
@@ -169,7 +191,7 @@ table {
   flex-direction: column;
   justify-content: space-around;
   padding: 0 12%;
-  font-size: 29px;
+  font-size: 25px;
   display: flex;
 }
 
@@ -192,6 +214,10 @@ table {
   margin-top: 2%;
 }
 
+.contact {
+  z-index: 3;
+}
+
 .printDesign {
   background-color: #6a8977;
 }
@@ -204,6 +230,7 @@ table {
   gap: 50px;
   padding: 5% 0 0 2%;
   display: flex;
+  position: absolute;
 }
 
 .printDesign__page--allPage {
@@ -242,6 +269,10 @@ table {
   margin: 0 10% 5% 0;
 }
 
+.printDesign__carousel {
+  padding: 5vh 0;
+}
+
 .projectEspelet {
   background-color: #fbfeff;
 }
@@ -274,12 +305,28 @@ table {
   height: 100%;
 }
 
+.projectEspelet__second {
+  object-fit: scale-down;
+  object-position: left;
+  width: 100%;
+}
+
+.projectEspelet__third {
+  object-fit: scale-down;
+  object-position: right;
+  width: 100%;
+}
+
 .capsuleCollection {
   background-color: #bdb2a8;
 }
 
+.capsule {
+  height: 100vh;
+}
+
 .sectiontradiList {
-  background-color: #d5e2db;
+  background-color: #d6e3dc;
 }
 
 .bretonVedrenne {

@@ -6,11 +6,12 @@
     "build": "parcel build"
   },
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.4.0",
+    
     "parcel": "latest"
   },
   "dependencies": {
     "sass": "^1.49.9",
-    "siema": "^1.5.1"
+    "siema": "^1.5.1",
+    "@parcel/transformer-sass": "^2.5.0"
   }
 }

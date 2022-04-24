@@ -142,7 +142,7 @@
       this[globalName] = mainExports;
     }
   }
-})({"bZXlE":[function(require,module,exports) {
+})({"8ZY19":[function(require,module,exports) {
 "use strict";
 var HMR_HOST = null;
 var HMR_PORT = null;
@@ -223,7 +223,7 @@ function _arrayLikeToArray(arr, len) {
     for(var i = 0, arr2 = new Array(len); i < len; i++)arr2[i] = arr[i];
     return arr2;
 }
-/* global HMR_HOST, HMR_PORT, HMR_ENV_HASH, HMR_SECURE */ /*::
+/* global HMR_HOST, HMR_PORT, HMR_ENV_HASH, HMR_SECURE, chrome, browser */ /*::
 import type {
   HMRAsset,
   HMRMessage,
@@ -250,11 +250,18 @@ interface ParcelModule {
     _disposeCallbacks: Array<(mixed) => void>,
   |};
 }
+interface ExtensionContext {
+  runtime: {|
+    reload(): void,
+  |};
+}
 declare var module: {bundle: ParcelRequire, ...};
 declare var HMR_HOST: string;
 declare var HMR_PORT: string;
 declare var HMR_ENV_HASH: string;
 declare var HMR_SECURE: boolean;
+declare var chrome: ExtensionContext;
+declare var browser: ExtensionContext;
 */ var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
 function Module(moduleName) {
@@ -309,7 +316,12 @@ if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
                     var id = assetsToAccept[i][1];
                     if (!acceptedAssets[id]) hmrAcceptRun(assetsToAccept[i][0], id);
                 }
-            } else window.location.reload();
+            } else if ('reload' in location) location.reload();
+            else {
+                // Web extension context
+                var ext = typeof chrome === 'undefined' ? typeof browser === 'undefined' ? null : browser : chrome;
+                if (ext && ext.runtime && ext.runtime.reload) ext.runtime.reload();
+            }
         }
         if (data.type === 'error') {
             // Log parcel errors to console
@@ -403,7 +415,7 @@ function reloadCSS() {
             var href = links[i].getAttribute('href');
             var hostname = getHostname();
             var servedFromHMRServer = hostname === 'localhost' ? new RegExp('^(https?:\\/\\/(0.0.0.0|127.0.0.1)|localhost):' + getPort()).test(href) : href.indexOf(hostname + ':' + getPort());
-            var absolute = /^https?:\/\//i.test(href) && href.indexOf(window.location.origin) !== 0 && !servedFromHMRServer;
+            var absolute = /^https?:\/\//i.test(href) && href.indexOf(location.origin) !== 0 && !servedFromHMRServer;
             if (!absolute) updateLink(links[i]);
         }
         cssTimeout = null;
@@ -525,12 +537,22 @@ const printDesignCarousel = new _siemaDefault.default({
     easing: 'ease-in',
     perPage: 1
 });
-const next = document.getElementById('printDesign_next');
-const prev = document.getElementById('printDesign_prev');
-prev.addEventListener('click', ()=>printDesignCarousel.prev()
-);
-next.addEventListener('click', ()=>printDesignCarousel.next()
-);
+const nextDesignCarousel = document.getElementById('printDesign_next');
+const prevDesignCarousel = document.getElementById('printDesign_prev');
+// prev.addEventListener('click', () => printDesignCarousel.prev());
+// next.addEventListener('click', () => printDesignCarousel.next());
+prevDesignCarousel.addEventListener('click', ()=>{
+    printDesignCarousel.prev();
+    const indexOfCurrent = printDesignCarousel.currentSlide;
+    if (indexOfCurrent !== 0) document.getElementById('printDesignPage').style.opacity = "0";
+    else document.getElementById('printDesignPage').style.opacity = "1";
+});
+nextDesignCarousel.addEventListener('click', ()=>{
+    printDesignCarousel.next();
+    const indexOfCurrent = printDesignCarousel.currentSlide;
+    if (indexOfCurrent !== 0) document.getElementById('printDesignPage').style.opacity = "0";
+    else document.getElementById('printDesignPage').style.opacity = "1";
+});
 // ESPELET
 const projectEspeletCarousel = new _siemaDefault.default({
     selector: '.projectEspelet__carousel',
@@ -1093,6 +1115,6 @@ exports.export = function(dest, destName, get) {
     });
 };
 
-},{}]},["bZXlE","2DotB"], "2DotB", "parcelRequire716c")
+},{}]},["8ZY19","2DotB"], "2DotB", "parcelRequire716c")
 
 //# sourceMappingURL=index.88090f45.js.map
